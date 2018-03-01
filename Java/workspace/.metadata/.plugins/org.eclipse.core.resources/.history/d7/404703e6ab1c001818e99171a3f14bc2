@@ -1,0 +1,25 @@
+package labs;
+
+import java.util.Scanner;
+
+public class LoopMenu {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int num;
+		
+		do {		
+			System.out.println("Please select one of the menu items below: ");	
+			System.out.println("1. Greetings");
+			System.out.println("2. Advice");
+			System.out.println("3. Wisdom");
+			System.out.println("4. Help");
+			System.out.println("5. Quit");
+			num = input.nextInt();
+			
+		} while (num == 1); 
+			System.out.println("Greetings, welcome to Java.");
+			
+		input.close();
+	}
+
+}

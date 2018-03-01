@@ -1,0 +1,22 @@
+package labs;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		for (int i = 0; i < 10; i++) {
+			System.out.println(i);
+			int fact = 1;
+			
+		if(i >= 1) {
+			i = fact;
+		}
+			else if(fact == 1) {
+				fact = i * fact;
+				
+			}
+			
+		}
+
+	}
+
+}

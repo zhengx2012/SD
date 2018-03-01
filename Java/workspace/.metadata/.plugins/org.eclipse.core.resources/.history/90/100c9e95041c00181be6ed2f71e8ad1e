@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Circle2 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Please enter a radius: ");
+		double radius = input.nextDouble();
+
+		double circumference = 2 * 3.141592653589793 * radius;
+		System.out.println("The radius of your circle is: " + radius + " and the cirumference is: " + circumference);
+
+		double area = 3.141592653589793 * (radius * radius);
+		System.out.println("The area of your circle is: " + area);
+
+	}
+
+}

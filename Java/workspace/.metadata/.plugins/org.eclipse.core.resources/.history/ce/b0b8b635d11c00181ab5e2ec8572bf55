@@ -1,0 +1,30 @@
+package drills;
+
+public class CalculateTemp {
+
+	static double newTemp;
+	public static void main(String[] args) {
+		calculateTemp(80, 'F');
+		System.out.println(newTemp);
+		
+		
+	}
+
+	public static void calculateTemp(double temp, char value) { 
+		if(value == 'F') {
+			newTemp = (temp - 32) / 1.8;
+		}
+		else if(value == 'C') {
+		newTemp = (temp * 1.8) + 32;
+		}
+		else {
+			System.out.println("Please enter correct characters.");
+		}
+		
+		
+	}
+	
+	
+	
+
+}

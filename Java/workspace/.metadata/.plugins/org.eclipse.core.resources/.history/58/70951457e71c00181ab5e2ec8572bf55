@@ -1,0 +1,16 @@
+package labs;
+
+public class Fib {
+
+	public static void main(String[] args) {
+		int sum = 0, i, j = 0;
+		for (i = 0; i < 20; i++) {
+			i = j;
+			j += i;
+			sum = j + i;
+			System.out.println(sum);
+		}
+
+	}
+
+}

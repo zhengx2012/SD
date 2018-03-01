@@ -1,0 +1,78 @@
+package labs;
+
+import java.util.Scanner;
+
+public class IfCelsFahrLoop {
+
+	public static void main(String[] args) {
+		temperature();
+
+	}
+
+	// If the scale is C, c, Celsius, or celsius, convert to Fahrenheit = (9.0/5.0
+	// Celsius) + 32.
+	// If F, f, Fahrenheit, or fahrenheit, convert Celsius = 5.0/9.0 (Fahrenheit -
+	// 32)
+	public static void temperature() {
+		Scanner input = new Scanner(System.in);
+		// Entering a temperature integer
+
+		System.out.println("Please enter the temperature: ");
+		double degreeNumber = input.nextDouble();
+		// Scale of temp
+		System.out.println("Please enter the scale of the temperature (Fahrenheit or Celcius): ");
+		String degreeScale = input.next();
+
+		while (degreeScale.equals("F") || (degreeScale.equals("C"))) {
+			
+			double newTemp;
+
+			switch (degreeScale) {
+			case "F":
+			case "f":
+			case "Fahrenheit":
+			case "fahrenheit":
+
+				newTemp = (5.0 / 9.0) * (degreeNumber) - 32;
+
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Celcius");
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Celcius");
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Celcius");
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Celcius");
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Celcius");
+				break;
+			case "C":
+			case "c":
+			case "Celcius":
+			case "celcius":
+
+				newTemp = (9.0 / 5.0) * (degreeNumber) + 32;
+
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Fahrenheit");
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Fahrenheit");
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Fahrenheit");
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Fahrenheit");
+				System.out.println("The temperature is " + degreeNumber + " degrees " + degreeScale + " is " + newTemp
+						+ " Fahrenheit");
+				break;
+
+			default:
+				System.out.println("Invalid response.");
+				break;
+				
+			} break;
+		}
+		input.close();
+
+	}
+
+}

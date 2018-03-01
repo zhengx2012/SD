@@ -1,0 +1,35 @@
+package labs;
+
+public class Fib {
+
+	public static void main(String[] args) {
+		int sum = 0, fib = 0, n1 = 0, n2 =0;
+		for (int i = 0; i < 20; i++) {
+			
+			
+			fib = n1 + n2;
+			
+			System.out.println(fib);
+
+				
+				if (fib == 0) {
+					fib++;
+				}
+				if(fib > 1) {
+					n2 = n1;
+					n1 = fib;
+				}
+
+				
+				
+			
+
+			
+
+			
+			
+		}
+
+	}
+
+}

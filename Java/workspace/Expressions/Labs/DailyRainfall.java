@@ -1,0 +1,24 @@
+
+public class DailyRainfall {
+	public static void main(String[] args) {
+		int mon = 2, tue = 3, wed = 2, thur = 1, fri = 2, sat = 2, sun = 5;
+
+		System.out.println("Daily rainfall for the week:");
+		System.out.println("Monday: " + mon);
+		System.out.println("Tuesday: " + tue);
+		System.out.println("Wednesday: " + wed);
+		System.out.println("Thursday: " + thur);
+		System.out.println("Friday: " + fri);
+		System.out.println("Saturday: " + sat);
+		System.out.println("Sunday: " + sun);
+
+		int total = mon + tue + wed + thur + fri + sat + sun;
+
+		System.out.println("\nThe calculated total rainfall for the week is: " + total);
+
+		double avg = total / 7;
+
+		System.out.println("The average rainfall for the week is: " + avg);
+
+	}
+}

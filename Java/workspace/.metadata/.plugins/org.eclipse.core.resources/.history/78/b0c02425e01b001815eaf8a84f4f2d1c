@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class NewClass {
+	public static void main(String[] args) {
+		// TODO create scanner
+		Scanner input = new Scanner(System.in);
+		System.out.println("Type Something: ");
+		String s = input.nextLine();
+		System.out.println("You said, \"" + s + "\"");
+		
+		input.close();
+	}
+}
