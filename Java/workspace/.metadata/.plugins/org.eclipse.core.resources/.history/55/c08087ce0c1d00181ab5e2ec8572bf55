@@ -50,8 +50,10 @@ public class WhileLoopBreakContinue {
 			// Loop here...
 			String input = scan.next();
 			
-			do { input = scan.nextLine();
-			System.out.println(input);
+			do {
+				if (!input.equals("quit")) {
+					input = scan.nextLine();
+				}
 			} while (input.equals("quit"));
 
 			System.out.println("Infinite loop Finished");

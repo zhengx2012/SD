@@ -46,13 +46,7 @@ public class WhileLoopBreakContinue {
 			// Hint: check if the user's input equals "quit" by using the
 			// if("quit".equals(YOUR_INPUT_VARIABLE)).
 			System.out.println("Enter a word, 'quit' to exit.");
-			
 			// Loop here...
-			String input = scan.next();
-			
-			do { input = scan.nextLine();
-			System.out.println(input);
-			} while (input.equals("quit"));
 
 			System.out.println("Infinite loop Finished");
 		}
