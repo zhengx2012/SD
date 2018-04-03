@@ -55,7 +55,8 @@ public class WhileLoopBreakContinue {
 			} while (input.equals("quit"));
 
 			System.out.println("Infinite loop Finished");
-		}
+			scan.close();
+		} 
 
-	}
+	} 
 }
